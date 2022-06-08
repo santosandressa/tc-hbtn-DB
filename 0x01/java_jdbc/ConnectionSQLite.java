@@ -2,8 +2,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Logger;
+
 public class ConnectionSQLite {
+    
     public static void main(String[] args) throws SQLException {
+        
         ConnectionSQLite connectionSQLite = new ConnectionSQLite();
         connectionSQLite.initConnection();
     }
@@ -11,8 +14,8 @@ public class ConnectionSQLite {
     Connection connection;
     
     Logger logger = Logger.getLogger(ConnectionSQLite.class.getName());
+    
     public void initConnection() throws SQLException {
-
         try {
             Class.forName("org.sqlite.JDBC");
             connection = DriverManager.getConnection("jdbc:sqlite:sqlite_database_2022.db");
