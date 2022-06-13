@@ -19,7 +19,7 @@ public class PrintJDBCDrivers {
         // Print the drivers and versions
         while (drivers.hasMoreElements()) {
             Driver d = drivers.nextElement();
-            logger.info(d.getClass().getName() + " " + d.getMajorVersion() + "." + d.getMinorVersion());
+            logger.info(d.getClass() + " " + d.getMajorVersion() + "." + d.getMinorVersion());
         }
     }
 }
