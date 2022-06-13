@@ -4,8 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Logger;
 
 public class ClienteDAOImpl implements ClienteDAO {
@@ -53,8 +51,6 @@ public class ClienteDAOImpl implements ClienteDAO {
 
     @Override
     public void selectAll(String urlConexao) {
-        List<Cliente> clientes = new ArrayList<>();
-
         try {
             String sql = String.format("SELECT * FROM Cliente");
             PreparedStatement statement = connection.prepareStatement(sql);
@@ -67,8 +63,6 @@ public class ClienteDAOImpl implements ClienteDAO {
                 cliente.setIdade(rs.getInt("idade"));
                 cliente.setCpf(rs.getString("cpf"));
                 cliente.setRg(rs.getString("rg"));
-
-                clientes.add(cliente);
             }
             logger.info("All clients have been selected.");
         } catch (Exception e) {
