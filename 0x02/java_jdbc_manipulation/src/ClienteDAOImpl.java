@@ -23,7 +23,6 @@ public class ClienteDAOImpl implements ClienteDAO {
         }
     }
 
-
     @Override
     public Connection connect(String urlConexao) {
         return new ClienteDAOImpl().connection;
@@ -32,19 +31,18 @@ public class ClienteDAOImpl implements ClienteDAO {
     @Override
     public void createTable(String urlConexao) {
         try {
-            String sql = "CREATE TABLE IF NOT EXISTS cliente (id INTEGER PRIMARY KEY, nome TEXT, idade INTEGER, cpf TEXT, rg TEXT)";
+            String sql = "CREATE TABLE IF NOT EXISTS Cliente (id INTEGER PRIMARY KEY, nome TEXT, idade INTEGER, cpf TEXT, rg TEXT)";
             connection.createStatement().execute(sql);
             logger.info("Table Cliente has been created.");
         } catch (Exception e) {
             throw new RuntimeException("Table Cliente has not been created.", e);
         }
-
     }
 
     @Override
     public void insert(String url_conexao, Cliente cliente) {
         try {
-            String sql = String.format("INSERT INTO cliente (nome, idade, cpf, rg) VALUES ('%s', %d, '%s', '%s')", cliente.getNome(), cliente.getIdade(), cliente.getCpf(), cliente.getRg());
+            String sql = String.format("INSERT INTO Cliente (nome, idade, cpf, rg) VALUES ('%s', %d, '%s', '%s')", cliente.getNome(), cliente.getIdade(), cliente.getCpf(), cliente.getRg());
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.executeUpdate();
             logger.info("Cliente has been inserted.");
@@ -58,7 +56,7 @@ public class ClienteDAOImpl implements ClienteDAO {
         List<Cliente> clientes = new ArrayList<>();
 
         try {
-            String sql = "SELECT * FROM cliente";
+            String sql = String.format("SELECT * FROM Cliente");
             PreparedStatement statement = connection.prepareStatement(sql);
             ResultSet rs = statement.executeQuery();
 
@@ -71,7 +69,6 @@ public class ClienteDAOImpl implements ClienteDAO {
                 cliente.setRg(rs.getString("rg"));
 
                 clientes.add(cliente);
-
             }
             logger.info("All clients have been selected.");
         } catch (Exception e) {
@@ -82,27 +79,24 @@ public class ClienteDAOImpl implements ClienteDAO {
     @Override
     public void update(String urlConexao, int id, String name, Integer idade) {
         try {
-            String sql = String.format("UPDATE cliente SET nome = '%s', idade = %d WHERE id = %d", name, idade, id);
+            String sql = String.format("UPDATE Cliente SET nome = '%s', idade = %d WHERE id = %d", name, idade, id);
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.executeUpdate();
             logger.info("Cliente has been updated.");
         } catch (Exception e) {
             throw new RuntimeException("Cliente has not been updated.", e);
         }
-
     }
 
     @Override
     public void delete(String urlConexao, int id) {
-
         try {
-            String sql = String.format("DELETE FROM cliente WHERE id = %d", id);
+            String sql = String.format("DELETE FROM Cliente WHERE id = %d", id);
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.executeUpdate();
             logger.info("Cliente has been deleted.");
         } catch (Exception e) {
             throw new RuntimeException("Cliente has not been deleted.", e);
         }
-
     }
 }
