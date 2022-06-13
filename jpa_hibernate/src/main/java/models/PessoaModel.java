@@ -1,6 +1,6 @@
-package com.techcamps.cadastros.models;
+package models;
 
-import com.techcamps.cadastros.entities.Pessoa;
+import entities.Pessoa;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
