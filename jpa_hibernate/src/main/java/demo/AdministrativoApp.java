@@ -51,6 +51,7 @@ public class AdministrativoApp {
         dataNascimento.set(Calendar.YEAR, 1990);
         dataNascimento.set(Calendar.MONTH, Calendar.JANUARY);
         dataNascimento.set(Calendar.DAY_OF_MONTH, 15);
+        pessoa.setIdade(32);
         pessoa.setDataNascimento(dataNascimento);
 
         pessoaModel.create(pessoa);

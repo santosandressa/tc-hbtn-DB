@@ -17,6 +17,8 @@ public class Pessoa {
 
     private String telefone;
 
+    private Integer idade;
+
     private String cpf;
 
     @Temporal(javax.persistence.TemporalType.DATE)
@@ -58,6 +60,14 @@ public class Pessoa {
 
     public String getCpf() {
         return cpf;
+    }
+
+    public Integer getIdade() {
+        return idade;
+    }
+
+    public void setIdade(Integer idade) {
+        this.idade = idade;
     }
 
     public void setCpf(String cpf) {
