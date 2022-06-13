@@ -18,6 +18,10 @@ public class Cliente {
         this.rg = rg;
     }
 
+    public Cliente() {
+
+    }
+
     public Integer getId() {
         return id;
     }

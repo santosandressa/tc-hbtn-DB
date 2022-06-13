@@ -9,3 +9,7 @@ T
 $0x01/java_jdbc/ConnectionSQLite.java,0/9/09cb2efc1eadd210c0fadae50b3db3004d3b82b8
 I
 0x00/online/first_db.json,5/1/516c3bebe5fdf786546e62513971fafad7439cd6
+_
+/0x02/java_jdbc_manipulation/src/ClienteDAO.java,2/0/20ef02a49074e21f5ba9fb24dbcc48834c74c290
+T
+$0x01/java_jdbc/PrintJDBCDrivers.java,5/e/5e3bd403aea87e3a573ee917a8986a75f7ccad20
