@@ -13,7 +13,7 @@ public class ClienteDAOImpl implements ClienteDAO{
     public ClienteDAOImpl(){
         try {
             Class.forName("org.sqlite.JDBC");
-            this.connection = DriverManager.getConnection("jdbc:sqlite:sqlite_database_2022.db");
+            this.connection = DriverManager.getConnection("jdbc:sqlite:sqlite_database_marco_2022.db");
             logger.info("Connection to SQLite has been established.");
         } catch (Exception e) {
             throw new RuntimeException("Connection to SQLite has not been established.", e);
