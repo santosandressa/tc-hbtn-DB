@@ -1,10 +1,11 @@
 package src;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 
 public interface ClienteDAO {
 
-    Connection connect(String urlConexao);
+    Connection connect(String urlConexao) throws SQLException;
 
     void createTable(String urlConexao);
 
