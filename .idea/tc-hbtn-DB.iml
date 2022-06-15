@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="jpa" name="JPA">
+      <configuration>
+        <setting name="validation-enabled" value="true" />
+        <datasource-mapping>
+          <factory-entry name="gestao-cursos-jpa" />
+        </datasource-mapping>
+        <naming-strategy-map />
+        <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento1/gestao-cursos-api/src/main/resources/persistence.xml" />
+      </configuration>
+    </facet>
+  </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
@@ -8,6 +20,8 @@
       <sourceFolder url="file://$MODULE_DIR$/apache-maven" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/apache-maven/financeiro-api" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x02/java_jdbc_manipulation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento1/gestao-cursos-api/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento/gestao-cursos-api/src/main" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

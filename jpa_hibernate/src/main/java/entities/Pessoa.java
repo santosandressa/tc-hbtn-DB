@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.util.Calendar;
 
 @Entity
-@Table(name = "pessoas")
 public class Pessoa {
 
     @Id
@@ -21,7 +20,7 @@ public class Pessoa {
 
     private String cpf;
 
-    @Temporal(javax.persistence.TemporalType.DATE)
+    @Temporal(TemporalType.DATE)
     private Calendar dataNascimento;
 
     public Pessoa(){}
