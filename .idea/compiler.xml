@@ -12,6 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gestao-cursos-api" target="11" />
+      <module name="java_jpa_hibernate_mapeamento" target="11" />
       <module name="jpa_hibernate1" target="11" />
     </bytecodeTargetLevel>
   </component>

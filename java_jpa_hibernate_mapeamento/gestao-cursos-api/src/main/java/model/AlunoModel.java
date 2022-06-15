@@ -30,22 +30,22 @@ public class AlunoModel {
     }
 
     public Aluno findById(Long id) {
-      EntityManagerFactory emf = Persistence.createEntityManagerFactory("gestao-cursos-jpa");
-      EntityManager em = emf.createEntityManager();
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("gestao-cursos-jpa");
+        EntityManager em = emf.createEntityManager();
 
-      try{
-          System.out.println("Iniciando a busca do ALuno de id: " + id);
-          Aluno aluno = em.find(Aluno.class, id);
-          System.out.println("Aluno de id: " + id + " encontrado com sucesso!");
-          return aluno;
-      } catch (Exception e){
-          System.out.println("Erro ao buscar pessoa de id " + id + " " + e.getMessage());
-          return null;
-      } finally {
-          em.close();
-          emf.close();
-          System.out.println("Fechando conexão com o banco de dados");
-      }
+        try{
+            System.out.println("Iniciando a busca do ALuno de id: " + id);
+            Aluno aluno = em.find(Aluno.class, id);
+            System.out.println("Aluno de id: " + id + " encontrado com sucesso!");
+            return aluno;
+        } catch (Exception e){
+            System.out.println("Erro ao buscar pessoa de id " + id + " " + e.getMessage());
+            return null;
+        } finally {
+            em.close();
+            emf.close();
+            System.out.println("Fechando conexão com o banco de dados");
+        }
     }
 
     public List<Aluno> findAll() {

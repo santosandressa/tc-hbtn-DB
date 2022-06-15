@@ -22,6 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/apache-maven/financeiro-api" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x02/java_jdbc_manipulation" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento1/gestao-cursos-api/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento/gestao-cursos-api" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento1/src/main" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento1/src/main/java/entities" />
     </content>

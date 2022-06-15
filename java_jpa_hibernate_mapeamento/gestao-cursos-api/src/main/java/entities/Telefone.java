@@ -15,7 +15,8 @@ public class Telefone {
     @Column
     private String numero;
 
-    public Telefone(){}
+    public Telefone() {
+    }
 
     public Long getId() {
         return id;
@@ -40,5 +41,4 @@ public class Telefone {
     public void setNumero(String numero) {
         this.numero = numero;
     }
-
 }
