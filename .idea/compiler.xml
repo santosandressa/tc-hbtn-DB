@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="java_jpa_hibernate_mapeamento" />
         <module name="jpa_hibernate" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="java_jpa_hibernate_mapeamento" target="11" />
+      <module name="gestao-cursos-api" target="11" />
       <module name="jpa_hibernate1" target="11" />
     </bytecodeTargetLevel>
   </component>

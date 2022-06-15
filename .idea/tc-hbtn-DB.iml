@@ -6,6 +6,7 @@
         <setting name="validation-enabled" value="true" />
         <datasource-mapping>
           <factory-entry name="gestao-cursos-jpa" />
+          <factory-entry name="tc-hbtn-DB" />
         </datasource-mapping>
         <naming-strategy-map />
         <deploymentDescriptor name="persistence.xml" url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento1/gestao-cursos-api/src/main/resources/persistence.xml" />
@@ -21,7 +22,8 @@
       <sourceFolder url="file://$MODULE_DIR$/apache-maven/financeiro-api" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x02/java_jdbc_manipulation" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento1/gestao-cursos-api/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento/gestao-cursos-api/src/main" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento1/src/main" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/java_jpa_hibernate_mapeamento1/src/main/java/entities" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -1,6 +1,6 @@
-package java.model;
+package model;
 
-import java.entities.Curso;
+import entities.Curso;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

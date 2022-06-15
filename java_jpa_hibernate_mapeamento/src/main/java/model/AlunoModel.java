@@ -1,6 +1,6 @@
-package java.model;
+package model;
 
-import java.entities.Aluno;
+import entities.Aluno;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

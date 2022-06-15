@@ -1,8 +1,9 @@
-package java.demo;
+package demo;
 
-import java.entities.*;
-import java.model.AlunoModel;
-import java.model.CursoModel;
+import entities.*;
+import model.AlunoModel;
+import model.CursoModel;
+
 import java.time.LocalDate;
 import java.util.List;
 
